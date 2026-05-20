@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
+/* =========================================================
+   CTA SECTION
+========================================================= */
+
+.cta-section {
+  background: #f0f4f8;
+
+  padding: 0 2rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Barlow', sans-serif;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.cta-image-wrap {
+  width: 100%;
+  max-width: 640px;
+
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: -60px;
+}
+
+.cta-img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.cta-card {
+  width: 100%;
+  max-width: 820px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 5rem 2.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.cta-card h2 {
+  margin-bottom: 1rem;
+
+  color: #1a2d4a;
+
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.highlight {
+  display: block;
+  color: #2a7de1;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.cta-card p {
+  margin-bottom: 2rem;
+
+  color: #6b7a8d;
+
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.cta-btn {
+  background: #2a7de1;
+  border: none;
+
+  color: #ffffff;
+
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  padding: 0.75rem 2.2rem;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+
+  box-shadow: 0 4px 14px rgba(42, 125, 225, 0.35);
+}
+
+.cta-btn:hover {
+  background: #1a6acc;
+
+  box-shadow: 0 6px 20px rgba(42, 125, 225, 0.45);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  .cta-image-wrap {
+    margin-bottom: -40px;
+  }
+
+  .cta-card {
+    padding: 4rem 1.5rem 2.5rem;
+  }
+}

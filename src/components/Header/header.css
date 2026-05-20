@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;900&family=Barlow+Condensed:wght@700&display=swap');
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    #1aa6c8 0%,
+    #1dbbd8 40%,
+    #17a2be 100%
+  );
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  height: 66px;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 900;
+
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  flex: 1;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  padding: 0.45rem 0.85rem;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  border-radius: 4px;
+
+  transition: background 0.18s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.chevron {
+  width: 10px;
+  height: 7px;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.dropdown {
+  display: none;
+
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  min-width: 180px;
+
+  background: #ffffff;
+  border-radius: 6px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+
+  z-index: 200;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+
+  padding: 0.65rem 1.1rem;
+
+  color: #1a3a4a;
+  text-decoration: none;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  transition: background 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background: #f0f8fc;
+  color: #1aa6c8;
+}
+
+/* =========================================================
+   NAV ACTIONS
+========================================================= */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.btn-track {
+  background: transparent;
+  border: 1.8px solid rgba(255, 255, 255, 0.75);
+
+  color: #ffffff;
+
+  padding: 0.42rem 1.05rem;
+  border-radius: 4px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.btn-track:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #ffffff;
+}
+
+.btn-signin {
+  background: #ffffff;
+  border: none;
+
+  color: #1aa6c8;
+
+  padding: 0.42rem 1.1rem;
+  border-radius: 4px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition: opacity 0.18s ease;
+}
+
+.btn-signin:hover {
+  opacity: 0.88;
+}
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background 0.18s ease;
+}
+
+.lang-selector:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.flag {
+  width: 26px;
+  height: 18px;
+
+  object-fit: cover;
+
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section {
+  background: linear-gradient(
+    180deg,
+    #2a6db5 0%,
+    #2e9fc9 30%,
+    #41bcd4 55%,
+    #82d8e8 80%,
+    #c2eef5 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 3.5rem 2rem 0;
+}
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.hero-text {
+  max-width: 820px;
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  margin: 0 0 1rem;
+
+  color: #ffffff;
+
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+  font-weight: 700;
+
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.hero-text p {
+  margin: 0 0 2rem;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+
+  color: #ffffff;
+
+  padding: 0.65rem 1.6rem;
+  border-radius: 30px;
+
+  font-size: 0.97rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+
+  letter-spacing: 0.01em;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
+
+.hero-btn-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-city {
+  width: 100%;
+  max-width: 1200px;
+
+  margin-top: 2.5rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  mix-blend-mode: multiply;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar-inner {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero-text h1 {
+    font-size: 1.45rem;
+  }
+
+  .hero-city {
+    margin-top: 1.5rem;
+  }
+}

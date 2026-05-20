@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
+/* =========================================================
+   SCALES SECTION
+========================================================= */
+
+.scales-section {
+  background: #ffffff;
+
+  padding: 5rem 2rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Barlow', sans-serif;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.scales-header {
+  max-width: 720px;
+
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.scales-header h2 {
+  margin-bottom: 0.75rem;
+
+  color: #1a2d4a;
+
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.highlight {
+  color: #2a7de1;
+}
+
+.scales-header p {
+  color: #6b7a8d;
+
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.scales-grid {
+  width: 100%;
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.scales-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  gap: 1rem;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.card-img-wrap {
+  width: 160px;
+  height: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.scales-card h3 {
+  color: #1a2d4a;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.scales-card p {
+  max-width: 220px;
+
+  color: #6b7a8d;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  .scales-grid {
+    grid-template-columns: 1fr;
+  }
+}

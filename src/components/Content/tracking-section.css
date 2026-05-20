@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
+/* =========================================================
+   TRACKING SECTION
+========================================================= */
+
+.tracking-section {
+  background: #ffffff;
+
+  padding: 5rem 2rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Barlow', sans-serif;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.tracking-header {
+  max-width: 700px;
+
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.tracking-header h2 {
+  color: #1a2d4a;
+
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.highlight {
+  display: block;
+  color: #2a7de1;
+}
+
+.tracking-header p {
+  margin-top: 1rem;
+
+  color: #6b7a8d;
+
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.cards-grid {
+  width: 100%;
+  max-width: 1000px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+
+  margin-bottom: 3rem;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.feature-card {
+  background: #ffffff;
+
+  border: 1px solid #e8edf5;
+  border-radius: 16px;
+
+  padding: 2rem 1.75rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.25rem;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.icon-wrap {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+}
+
+.icon-wrap svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Blue */
+.icon-wrap.blue {
+  background: #dbeeff;
+}
+
+.icon-wrap.blue svg {
+  stroke: #2a7de1;
+}
+
+/* Teal */
+.icon-wrap.teal {
+  background: #d4f2f5;
+}
+
+.icon-wrap.teal svg {
+  stroke: #0e9aa7;
+}
+
+/* Amber */
+.icon-wrap.amber {
+  background: #fef3d0;
+}
+
+.icon-wrap.amber svg {
+  stroke: #b08a00;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.card-title {
+  color: #1a2d4a;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.card-desc {
+  color: #6b7a8d;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  border: 1.5px solid #2a7de1;
+
+  color: #2a7de1;
+
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.demo-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.demo-btn:hover {
+  background: #2a7de1;
+  color: #ffffff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
